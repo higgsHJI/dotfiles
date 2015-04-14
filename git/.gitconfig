@@ -40,4 +40,4 @@
     renamelimit=3000
     tool=vimdiff
 [commit]
-        template = /home/hji/.gitmessage
+        template = ~/.gitmessage
