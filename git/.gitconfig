@@ -1,0 +1,43 @@
+[user]
+	email = hji@conviva.com
+	name = Haoshuang Ji
+[push]
+	default = upstream
+[branch]
+	autosetuprebase = always
+[log]
+	decorate = short
+[color]
+	ui = true
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = white reverse
+[core]
+	editor = vi
+
+[alias]
+    st = status
+    stat = status
+    co = checkout
+    ci = commit --verbose
+    br = branch
+    pr = pull --rebase
+    lg = log --graph --stat
+    df = diff --patience
+    dft = difftool
+    cp = cherry-pick
+    rsh = reset --hard
+    rss = reset --soft
+    lgo = log --pretty=format:\"%C(cyan)%h %C(green)%ad%Creset | %s %C(yellow)%d %C(magenta)[%an]\" --graph --date=short
+[diff]
+        tool = vimdiff
+[difftool]
+        prompt = false
+[merge]
+    renamelimit=3000
+    tool=vimdiff
+[commit]
+        template = /home/hji/.gitmessage

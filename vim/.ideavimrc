@@ -1,0 +1,7 @@
+source ~/.vim/rc/mappings.rc.vim
+source ~/.vim/rc/hji.rc.vim
+" search word under cursor
+nnoremap gd *
+nnoremap <silent> <C-j> 5j
+nnoremap <silent> <C-k> 5k
+nmap <silent> ,<cr> :noh<cr>
