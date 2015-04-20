@@ -275,4 +275,19 @@ let g:vimwiki_ext2syntax = {'.md': 'markdown',
 let g:GeeknoteFormat='vimwiki'
 
 
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 1
+let g:syntastic_python_checkers = ['pylint']
+" use C-q to switch between on and off :-)
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
+nnoremap <C-q> :SyntasticCheck<CR> :SyntasticToggleMode<CR>
+
+
+noremap <C-t> :Autoformat<CR><CR>
 
