@@ -1,7 +1,19 @@
-source ~/.vim/rc/mappings.rc.vim
-source ~/.vim/rc/hji.rc.vim
+
+set hlsearch
+set number
+set autochdir
+set vb
+set ignorecase
+
 " search word under cursor
 nnoremap gd *
 nnoremap <silent> <C-j> 5j
 nnoremap <silent> <C-k> 5k
 nmap <silent> ,<cr> :noh<cr>
+
+inoremap jj           <ESC>
+
+" qq to record and Q to replay
+nnoremap Q @q
+
+nnoremap Y y$

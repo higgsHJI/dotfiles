@@ -27,7 +27,6 @@ let g:neocomplcache_same_filetype_lists.vimwiki = 'tex'
 let g:neocomplcache_same_filetype_lists.txt = 'tex'
 let g:neocomplcache_same_filetype_lists.mail = 'cpp'
 
-
 "vimwiki setup"
 let g:vimwiki_list = [{'path': '~/.vim/vimwiki/', 'path_html': '~/.vim/vimwiki_html/'}]
 let g:vimwiki_browsers = ['firefox-browser']
@@ -244,6 +243,13 @@ let g:jedi#show_call_signatures = 2
 let g:jedi#force_py_version = 3
 let g:jedi#popup_select_first = 0
 
+" let g:jedi#goto_assignments_command = "<leader>g"
+" let g:jedi#goto_definitions_command = "<leader>d"
+" let g:jedi#documentation_command = "K"
+" let g:jedi#usages_command = "<leader>n"
+" let g:jedi#completions_command = "<C-Space>"
+" let g:jedi#rename_command = "<leader>r"
+
 setl shiftwidth=2 softtabstop=2
 
 
@@ -254,7 +260,7 @@ let g:indentLine_color_gui = '#09AA08'
 let g:indentLine_char = '│'"
 
 " auto close { in java/c code
-inoremap {<CR> {<CR>}<C-o>O
+imap {<CR> {<CR>}<C-o>O
 
 " set guifont=Inconsolata\ for\ Powerline:h15
 set guifont=Monaco\ for\ Powerline:h13

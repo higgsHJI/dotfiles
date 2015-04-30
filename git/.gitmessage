@@ -1,6 +1,8 @@
 [Component] Short summary (one line)
 
-More detailed description of the change.
+What was the motivation for the change? 
+How does it differ from the previous implementation? 
+Use the imperative, present tense („change“, not „changed“ or „changes“) to be consistent with generated messages from commands like git merge.
 
 Issue: JIRA YY-XXXXX
 
